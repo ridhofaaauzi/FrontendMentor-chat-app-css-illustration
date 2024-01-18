@@ -1,0 +1,513 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  font-size: 16px;
+  background-color: hsl(270, 20%, 96%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+  gap: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .bg-pattern-top {
+  position: absolute;
+  width: 700px;
+  height: 800px;
+  background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  top: 0;
+  left: -150px;
+  border-radius: 0px 0px 550px 550px;
+}
+
+.container .bg-pattern-bottom {
+  position: absolute;
+  width: 700px;
+  height: 800px;
+  background-color: hsl(206, 6%, 79%);
+  opacity: 5%;
+  bottom: 0;
+  right: -150px;
+  border-radius: 550px 550px 0px 0px;
+}
+
+.container .mobile {
+  background-color: white;
+  width: 375px;
+  height: auto;
+  border-radius: 35px 35px 35px 35px;
+  box-shadow: 2px 2px 2px 2px hsl(206, 6%, 79%);
+  z-index: 999;
+}
+
+.container .mobile .mobile-content {
+  padding: 1rem;
+  position: relative;
+}
+
+.container .mobile .mobile-content .mobile-rectangle {
+  position: absolute;
+  background-color: white;
+  width: 200px;
+  height: 35px;
+  margin-left: 4.7rem;
+  border-radius: 15px;
+}
+
+.container .mobile .mobile-content .mobile-content-main {
+  background-color: hsl(270, 20%, 96%);
+  padding: 1rem;
+  border-radius: 0px 0px 25px 25px;
+}
+
+.container .mobile .mobile-header {
+  margin-top: 1rem;
+  background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  gap: 10px;
+  border-radius: 25px 25px 10px 10px;
+}
+
+.container .mobile .mobile-back {
+  width: 15px;
+  height: 15px;
+  border-top: 4px solid white;
+  border-left: 4px solid white;
+  transform: rotate(-45deg);
+  margin-top: 0.2rem;
+  margin-left: 2rem;
+}
+
+.container .mobile .mobile-profile {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 0.2rem;
+}
+
+.container .mobile .mobile-profile img {
+  width: 35px;
+  border-radius: 100%;
+  border: 2px solid white;
+}
+
+.container .mobile .mobile-profile .profile-user h4 {
+  color: white;
+  font-size: 14px;
+}
+
+.container .mobile .mobile-profile .profile-user span {
+  color: hsl(276, 100%, 81%);
+  opacity: 50%;
+  font-size: 12px;
+}
+
+.container .mobile .mobile-header .mobile-menus {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.container .mobile .mobile-header .mobile-menus .menu {
+  width: 4.5px;
+  height: 4.5px;
+  background-color: white;
+  border-radius: 100%;
+  margin-left: 4rem;
+}
+
+.container
+  .mobile
+  .mobile-content-main
+  .mobile-chat
+  .mobile-chat-first
+  .mobile-message-first {
+  background-color: hsl(276, 100%, 81%);
+  width: 200px;
+  height: auto;
+  padding: 0.5rem;
+  font-size: 13px;
+  border-radius: 8px;
+  line-height: 1.2rem;
+}
+
+.container
+  .mobile
+  .mobile-content-main
+  .mobile-chat
+  .mobile-chat-first
+  .mobile-message-first
+  span {
+  color: hsl(276, 55%, 52%);
+}
+
+.container
+  .mobile
+  .mobile-content-main
+  .mobile-chat
+  .mobile-chat-first
+  .mobile-message-second {
+  background-color: hsl(276, 100%, 81%);
+  margin-top: 1rem;
+  width: 200px;
+  height: auto;
+  padding: 0.5rem;
+  border-radius: 8px;
+  line-height: 1.2rem;
+}
+
+.container
+  .mobile
+  .mobile-content-main
+  .mobile-chat
+  .mobile-chat-first
+  .mobile-message-second
+  span {
+  color: hsl(276, 55%, 52%);
+  font-size: 13px;
+}
+
+.container
+  .mobile
+  .mobile-content-main
+  .mobile-chat
+  .mobile-chat-second
+  .mobile-message-third {
+  margin-top: 1rem;
+  margin-left: 8rem;
+}
+
+.container
+  .mobile
+  .mobile-content-main
+  .mobile-chat
+  .mobile-chat-second
+  .mobile-message-third {
+  display: flex;
+  gap: 8px;
+}
+
+.container
+  .mobile
+  .mobile-content-main
+  .mobile-chat
+  .mobile-chat-second
+  .mobile-message-third
+  img {
+  width: 55px;
+  border-radius: 10px;
+}
+
+.container
+  .mobile
+  .mobile-content-main
+  .mobile-chat
+  .mobile-chat-second
+  .mobile-message-four {
+  background-color: hsl(0, 0%, 100%);
+  margin-top: 1rem;
+  width: 200px;
+  height: auto;
+  padding: 0.5rem;
+  border-radius: 8px;
+  line-height: 1.2rem;
+  margin-left: 6.9rem;
+}
+
+.container
+  .mobile
+  .mobile-content-main
+  .mobile-chat
+  .mobile-chat-second
+  .mobile-message-four
+  span {
+  color: hsl(271, 15%, 43%);
+  font-size: 13px;
+}
+
+.container
+  .mobile
+  .mobile-content-main
+  .mobile-chat
+  .mobile-chat-second
+  .mobile-message-five {
+  background-color: hsl(0, 0%, 100%);
+  margin-top: 1rem;
+  width: 120px;
+  height: auto;
+  padding: 0.5rem;
+  border-radius: 8px;
+  line-height: 1.2rem;
+  margin-left: 11.8rem;
+}
+
+.container
+  .mobile
+  .mobile-content-main
+  .mobile-chat
+  .mobile-chat-second
+  .mobile-message-five
+  span {
+  color: hsl(271, 15%, 43%);
+  font-size: 13px;
+}
+
+.container
+  .mobile
+  .mobile-content-main
+  .mobile-chat
+  .mobile-chat-third
+  .mobile-message-six {
+  background-color: hsl(276, 100%, 81%);
+  margin-top: 1rem;
+  width: 200px;
+  height: auto;
+  padding: 0.5rem;
+  border-radius: 8px;
+  line-height: 1.2rem;
+}
+
+.container
+  .mobile
+  .mobile-content-main
+  .mobile-chat
+  .mobile-chat-third
+  .mobile-message-six
+  span {
+  color: hsl(276, 55%, 52%);
+  font-size: 13px;
+}
+
+.container
+  .mobile
+  .mobile-content-main
+  .mobile-chat
+  .mobile-chat-third
+  .mobile-message-seven {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  margin-top: 1rem;
+  width: 200px;
+  height: auto;
+  padding: 0.5rem;
+  border-radius: 8px;
+  line-height: 1.2rem;
+}
+
+.container
+  .mobile
+  .mobile-content-main
+  .mobile-chat
+  .mobile-chat-third
+  .mobile-message-seven
+  .mobile-circle {
+  width: 25px;
+  height: 25px;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+
+.container
+  .mobile
+  .mobile-content-main
+  .mobile-chat
+  .mobile-chat-third
+  .mobile-message-seven
+  span {
+  color: white;
+  font-size: 13px;
+}
+
+.container
+  .mobile
+  .mobile-content-main
+  .mobile-chat
+  .mobile-chat-third
+  .mobile-message-eight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  margin-top: 1rem;
+  width: 200px;
+  height: auto;
+  padding: 0.5rem;
+  border-radius: 8px;
+  line-height: 1.2rem;
+}
+
+.container
+  .mobile
+  .mobile-content-main
+  .mobile-chat
+  .mobile-chat-third
+  .mobile-message-eight
+  .mobile-circle {
+  width: 25px;
+  height: 25px;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+
+.container
+  .mobile
+  .mobile-content-main
+  .mobile-chat
+  .mobile-chat-third
+  .mobile-message-eight
+  span {
+  color: white;
+  font-size: 13px;
+}
+
+.container .mobile .mobile-content-main .mobile-typing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 25px;
+}
+
+.container .mobile .mobile-content-main .mobile-typing span {
+  color: hsl(206, 6%, 79%);
+  font-size: 13px;
+}
+
+.container .mobile .mobile-content-main .mobile-typing .mobile-circle-send {
+  background-color: hsl(271, 36%, 24%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.container
+  .mobile
+  .mobile-content-main
+  .mobile-typing
+  .mobile-circle-send
+  .mobile-send {
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  transform: rotate(135deg);
+  margin-top: 0.5rem;
+  margin-left: 0.3rem;
+}
+
+.container .hero {
+  width: 30%;
+  line-height: 1.5rem;
+  z-index: 999;
+}
+
+.container .hero .hero-title h1 {
+  font-size: 42px;
+  margin-bottom: 1.5rem;
+  color: hsl(271, 36%, 24%);
+}
+
+.container .hero .hero-title .hero-description p {
+  color: hsl(270, 7%, 64%);
+}
+
+@media screen and (max-width: 1024px) {
+  .container .bg-pattern-top {
+    left: -450px;
+  }
+
+  .container .hero {
+    width: 50%;
+    line-height: 1.5rem;
+    z-index: 999;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container .hero {
+    width: 100%;
+  }
+
+  .container .hero .hero-title h1 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .container .bg-pattern-top {
+    position: absolute;
+    width: 700px;
+    height: 800px;
+    background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    top: -150px;
+    left: -550px;
+    border-radius: 0px 0px 550px 550px;
+  }
+
+  .container .mobile {
+    width: 350px;
+    height: auto;
+  }
+
+  .container .mobile .mobile-content .mobile-rectangle {
+    margin-left: 4rem;
+  }
+
+  .container
+    .mobile
+    .mobile-content-main
+    .mobile-chat
+    .mobile-chat-second
+    .mobile-message-third {
+    margin-left: 6.5rem;
+  }
+
+  .container
+    .mobile
+    .mobile-content-main
+    .mobile-chat
+    .mobile-chat-second
+    .mobile-message-four {
+    margin-left: 5.5rem;
+  }
+
+  .container
+    .mobile
+    .mobile-content-main
+    .mobile-chat
+    .mobile-chat-second
+    .mobile-message-five {
+    margin-left: 10.5rem;
+  }
+
+  .container .hero .hero-title {
+    text-align: center;
+  }
+}
